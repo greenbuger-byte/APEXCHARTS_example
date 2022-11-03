@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import Chart from 'react-apexcharts';
 
-// Данные отсортированы 
+// Данные c сервера
 // const example = {
 //   chart: [
 //     /* ВАРИАНТ 1 два столбца */
@@ -25,36 +25,6 @@ import Chart from 'react-apexcharts';
 //     }
 //   ] 
 // }
-
-// Ось X
-// Список
-// Название поля 
-// Значение
-
-// Столбцы визуальные столбцы с высотой
-/*** 
-  {
-    name: string, // название графика
-    width: 'full' | 'part', // ширина графика ( на весь экран или на часть экрана)
-    dataLabels: boolean, // отображать значение для бара (визуально)
-    categories: [number, number], // Значения по x (отсортированные)
-    bar_width: number, // ширина всех баров на графике
-    series: [  //  Группа бар для categories отображает массив бар для каждой categories ( для оси Y)
-      { 
-        name:  string // Название бара 1,
-        data: [number, number], // массив  всех бар1 на графике с индексом categories ( categories.length == data.lenght)
-        color: string, // цвет  в формате HEX для бара
-      },
-      { 
-        name: string // Название бара 2,
-        data: [number, number],// массив всех бар2 на графике с индексом categories ( categories.length == data.lenght)
-        color: string,
-      },
-      ...
-    ]
-  }
-]
-***/
 
 
 const ChartBar = () => {
